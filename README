@@ -1,0 +1,20 @@
+
+Before running the test install this archive in your local repo.
+Here is the cmd to do it.
+
+mvn install:install-file \
+   -Dfile=___FIX_THIS___/lib/utils-arquillian-utils-4.5.0-SNAPSHOT.jar \
+   -DgroupId=org.jboss.resteasy \
+   -DartifactId=utils-arquillian-utils \
+   -Dversion=4.5.0-SNAPSHOT \
+   -Dpackaging=jar 
+
+
+Debugging
+Set a breakpoint at following
+  QuarkusJunitCallbacks line 27
+
+  ProviderInjectionTest line 47
+                        line 53
+                        line 62
+                        line 73
